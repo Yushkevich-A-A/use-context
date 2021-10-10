@@ -1,0 +1,12 @@
+.item {
+    padding: 10px;
+    user-select: none;
+}
+.item:nth-child(n + 2) {
+    border-top: 1px solid #c5c5c5;
+}
+
+.selected {
+    color: white;
+    background-color: rgb(4, 196, 255);
+}
