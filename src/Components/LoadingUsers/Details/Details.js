@@ -12,7 +12,6 @@ function Details(props) {
     const [ loadingUser, setLoadingUser ] = useState(false); 
 
     useEffect(() => {
-        setDataUser(null);
         setLoadingUser(true)
         fetch(`${process.env.REACT_APP_USER_DATA}/${info.id}.json`)
             .then(response => response.json())
